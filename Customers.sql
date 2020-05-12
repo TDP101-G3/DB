@@ -1,8 +1,9 @@
 -- MySQL dump 10.13  Distrib 8.0.19, for macos10.15 (x86_64)
 --
--- Host: localhost    Database: Customer
+-- Host: localhost    Database: Customers
 -- ------------------------------------------------------
 -- Server version	8.0.19
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -176,6 +177,31 @@ LOCK TABLES `Driver_opinion` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `Manager`
+--
+
+DROP TABLE IF EXISTS `Manager`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Manager` (
+  `Manager_id` int NOT NULL AUTO_INCREMENT,
+  `Manager_name` varchar(45) NOT NULL,
+  `Manager_account` varchar(45) NOT NULL,
+  `Manager_password` varchar(45) NOT NULL,
+  PRIMARY KEY (`Manager_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Manager`
+--
+
+LOCK TABLES `Manager` WRITE;
+/*!40000 ALTER TABLE `Manager` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Manager` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `Order_detail`
 --
 
@@ -219,4 +245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-07 12:02:49
+-- Dump completed on 2020-05-12 12:43:47
